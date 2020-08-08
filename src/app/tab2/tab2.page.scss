@@ -1,0 +1,91 @@
+.headerTitle {
+    padding: 16px;
+    padding: 30px;
+    padding-top: 20px;
+    ion-title {
+        padding: 0px;
+    }
+
+    ion-toolbar {
+        --background: transparent;
+    }
+}
+
+.categoryList {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+
+    ion-card {
+        min-width: 100px;
+        width: auto;
+        max-width: 100%;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 27px;
+        margin: 10px;
+
+        ion-card-title {
+            white-space: nowrap;
+            width: 100%;
+            text-overflow: unset;
+            overflow: visible;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+.rightDetail {
+    ion-buttons {
+        justify-content: flex-end;
+
+        ion-icon {
+            font-size: 15px;
+        }
+    }
+}
+
+
+.songDetails {
+    h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+.album {
+    ion-icon {
+        font-size: 36px;
+    }
+
+    ion-avatar {
+        background: #ffff;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px #00000029;
+        height: 56px;
+        width: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.containsList {
+    ion-item {
+        max-height: 74px;
+        height: 100%;
+    }
+}
+
+
+.musicList {
+    ion-avatar {
+        border: 1px solid;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+    }
+}
+

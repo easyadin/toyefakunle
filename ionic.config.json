@@ -1,5 +1,7 @@
 {
   "name": "toyefakunle",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -1,3 +1,105 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-split-pane contentId="main">
+    <ion-menu contentId="main">
+      <ion-header>
+        <ion-toolbar translucent>
+          <ion-title>Toye Fakunle</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-menu-toggle auto-hide="false">
+          <ion-list>
+            <ion-item detail="false" button routerLink="audio" routerLinkActive="active-link">
+              <ion-icon slot="start" name="musical-note"></ion-icon>
+              <ion-label>
+                <h2>Audio</h2>
+              </ion-label>
+            </ion-item>
+            <ion-item detail="false" button routerLink="video" routerLinkActive="active-link">
+              <ion-icon slot="start" src='data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M478.304,456.832l-64-128C411.584,323.424,406.048,320,400,320h-35.776L286.08,34.592C279.968,13.568,261.888,0,240,0
+      s-39.968,13.568-46.144,34.816L115.776,320H80c-6.048,0-11.584,3.424-14.304,8.832l-64,128c-2.496,4.96-2.208,10.848,0.704,15.552
+      C5.312,477.088,10.464,480,16,480h448c5.536,0,10.688-2.88,13.632-7.584C480.544,467.68,480.768,461.824,478.304,456.832z
+       M210.591,94.848C219.744,95.52,229.376,96,240,96c10.624,0,20.256-0.48,29.408-1.152l16.992,62.048
+      c-28.512,3.936-64.288,3.936-92.768,0L210.591,94.848z M240,352c-56.096,0-89.856-11.68-95.52-15.616l15.776-57.6
+      C182.272,284.576,210.591,288,240,288s57.728-3.392,79.744-9.216l15.328,55.968C326.56,341.408,293.44,352,240,352z" />
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>'>
+              </ion-icon>
+              <ion-label>
+                <h2>Video</h2>
+              </ion-label>
+            </ion-item>
+            <ion-item detail="false" button routerLink="devotional" routerLinkActive="active-link">
+              <ion-icon slot="start" name="book"></ion-icon>
+              <ion-label>
+                <h2>Devotional</h2>
+              </ion-label>
+            </ion-item>
+            <ion-item detail="false" button routerLink="quote" routerLinkActive="active-link">
+              <ion-icon slot="start"
+                src='data:image/svg+xml+utf8,<svg id="Capa_1" enable-background="new 0 0 409.294 409.294" height="512" viewBox="0 0 409.294 409.294" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m0 204.647v175.412h175.412v-175.412h-116.941c0-64.48 52.461-116.941 116.941-116.941v-58.471c-96.728 0-175.412 78.684-175.412 175.412z"/><path d="m409.294 87.706v-58.471c-96.728 0-175.412 78.684-175.412 175.412v175.412h175.412v-175.412h-116.941c0-64.48 52.461-116.941 116.941-116.941z"/></svg>'>
+              </ion-icon>
+              <ion-label>
+                <h2>Quotes</h2>
+              </ion-label>
+            </ion-item>
+            <ion-item detail="false" button routerLink="/tabs/Home">
+              <ion-icon slot="start" name="phone-portrait"></ion-icon>
+              <ion-label>
+                <h2>View App</h2>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-menu-toggle>
+      </ion-content>
+
+      <ion-footer>
+        <ion-toolbar>
+          <ion-buttons>
+            <ion-button (click)="signout()">
+              Signout <ion-icon name="log-out-outline" class="ion-padding"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-footer>
+    </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

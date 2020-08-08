@@ -1,0 +1,16 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "toyefakunle",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "server": {
+    "url": "http://10.102.1.98:8100"
+  }
+}

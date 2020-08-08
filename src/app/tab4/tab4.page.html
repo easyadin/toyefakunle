@@ -1,0 +1,21 @@
+<ion-header [translucent]="true" class="ion-no-border headerTitle" mode="ios">
+  <ion-toolbar>
+    <ion-title size="large">
+      Devotional
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="mainContainer">
+  <!-- music list -->
+  <ion-list>
+    <ion-item button *ngFor="let devotion of devotionalList"
+      [routerLink]="['/','devotionreader',devotion.id]">
+      <ion-label class="songDetails">
+        <h3>{{devotion.scripture}}</h3>
+        <p>{{devotion.createdAt}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
